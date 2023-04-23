@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="header-logo">
-            <img src="./img/png/logo.png" alt="">
+            <a href="#main"><img src="./img/svg/logo.svg" alt=""></a>
         </div>
         <nav class="header-nav">
             <ul class="header-nav__list">
@@ -23,28 +23,28 @@
                     <a href="#price">Прайс</a>
                 </li>
                 <li class="header-nav__item">
+                    <a href="#feedback">Оставить заявку</a>
+                </li>
+                <li class="header-nav__item">
                     <a href="#gallery">Галерея</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#feedback">Оформить заявку</a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#footer">Контакты</a>
+                    <a href="#map">Контакты</a>
                 </li>
             </ul>
         </nav>
         <div class="header-info">
             <div class="header-info__phone">
-                <div><img src="./img/png/phone.png" alt=""></div>
+                <div class="header-info__image"><img src="./img/svg/phone.svg" alt=""></div>
                 <div>+7(8332)26-57-70</div>
             </div>
             <div class="header-info__mail">
-                <div><img src="./img/png/mail.png" alt=""></div>
+                <div class='header-info__image'><img src="./img/svg/mail.svg" alt=""></div>
                 <div>shpzk@mail.ru</div>
             </div>
         </div>
     </header>
-    <section class="main">
+    <section id="main" class="main">
         <div class="main-content">
             <div class="main-info">
                 <div class="main-info__title">
@@ -54,9 +54,11 @@
                     Производство и пропитка деревянных шпал
                 </div>
                 <div class="main-info__text">
-                    ООО «Шпалопропиточный завод К» – производство и автоклавная<br> пропитка деревянных шпал, переводных и
+                    ООО «Шпалопропиточный завод К» – производство и автоклавная<br> пропитка деревянных шпал, переводных
+                    и
                     мостовых брусьев<br> креозотом и другими антисептиками.<br>
-                    Технологические процессы на производстве и готовые изделия<br> строго контролируются на всех этапах и
+                    Технологические процессы на производстве и готовые изделия<br> строго контролируются на всех этапах
+                    и
                     полностью соответствуют<br> требованиям ГОСТ.<br>
                     При постоянном сотрудничестве предусмотрена гибкая система скидок.<br>
                     Опыт на рынке более 20 лет.
@@ -72,52 +74,204 @@
                         <input type="tel" placeholder="+7 (123)456-78-90">
                     </div>
                     <div class="form-feedback__input">
-                        <textarea  placeholder="Сообщение"></textarea>
+                        <textarea placeholder="Сообщение"></textarea>
                     </div>
                     <button class="form-feedback__button" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
         <div class="button-price">
-            <button>Прайс</button>
+            <a href="#price">
+                <button>
+                    Прайс
+                </button>
+            </a>
         </div>
     </section>
-    <section class="price">
+    <section id="price" class="price">
         <h1>Прайс</h1>
         <div class="price-product">
             <div class="price-product__item">
                 <img src="./img/product/product1.jpg" alt="">
-                <div>Брус деревянный пропитанный для стрелочных переводов</div>
+                <div class="price-product__text">Брус деревянный пропитанный<br> для стрелочных переводов</div>
             </div>
             <div>
                 <img src="./img/product/product2.jpg" alt="">
-                <div>Шпала деревянная пропитанная</div>
+                <div class="price-product__text">Шпала деревянная пропитанная</div>
             </div>
             <div>
                 <img src="./img/product/product3.jpg" alt="">
-                <div>Полушпалки деревянные пропитанные </div>
+                <div class="price-product__text">Полушпалки деревянные пропитанные </div>
             </div>
         </div>
+        <div class="price-file">
+            <a href="">
+                Скачать прайс
+                <img src="./img/svg/file.svg" alt="">
+            </a>
+        </div>
     </section>
-    <section class="plus">
+    <section id="plus" class="plus">
+        <h2>Наши преимущества</h2>
+        <div class="plus-content">
+            <div class="plus-item">
+                <div>
+                    <img src="./img/plus/image1.jpg" alt="">
+                </div>
+                <div class="plus-content__info">
+                    <div class="plus-item__text">Пропитка автоклавным методом </div>
+                    <div class="plus-item__title">В соотвествии с ГОСТ 20022.5-93</div>
+                    <div class="plus-item__subtitle">Тип шпал по ГОСТ 78-2004<br>
+                        Норма I, II, III</div>
+                </div>
+            </div>
+            <div class="plus-item">
+                <div class="plus-content__info">
+                    <div class="plus-item__text">Антисептик - каменноугольное масло<br>
+                        (креозот)</div>
+                    <div class="plus-item__title">В соотвествии с ГОСТ 20022.5-93</div>
+                    <div class="plus-item__subtitle">Поглощение антисептика ГОСТ 20022.0<br>
+                        Норма 110-115 кг/м</div>
+                </div>
+                <div>
+                    <img src="./img/plus/image2.jpg" alt="">
+                </div>
+            </div>
+            <div class="plus-item">
+                <div>
+                    <img src="./img/plus/image3.jpg" alt="">
+                </div>
+                <div class="plus-content__info">
+                    <div class="plus-item__text">Древесина выского качества</div>
+                    <div class="plus-item__title">Древесина хвойных пород по ГОСТ 78-2004</div>
+                    <div class="plus-item__subtitle">Предпропиточная влажность ГОСТ 20022.14<br>
+                        Норма не более 25%</div>
+                </div>
+            </div>
+            <div class="plus-item">
+                <div class="plus-content__info">
+                    <div class="plus-item__text">Использование современных технологий и оборудования фото</div>
+                    <div class="plus-item__title">Объем выборки для контроля качества (шт)<br>
+                        ГОСТ 18321-73<br>
+                        Норма 20, 32, 50</div>
+                </div>
+                <div>
+                    <img src="./img/plus/image4.jpg" alt="">
+                </div>
+            </div>
+        </div>
 
     </section>
     <section class="partners">
+        <h1>Наши партнеры</h1>
+        <div class="partners-content">
+            <div>
+                <img src="./img/partners/uralhim.png" alt="">
+            </div>
+            <div>
+                <img src="./img/partners/gazprom.png" alt="">
+            </div>
+            <div>
+                <img src="./img/partners/rushpala.png" alt="">
+            </div>
+        </div>
 
     </section>
-    <section class="feedback">
+    <section id="feedback" class="feedback">
+        <h2>Оставить заявку</h2>
+        <div class="feedback-text">Если у вас есть вопросы, вы можете оставить их здесь</div>
+        <div class="feedback-content">
+            <form class="feedback-form">
+                <div class="feedback-form__input">
+                    <div class="feedback-form__text">Ваше имя:</div>
+                    <input type="name" placeholder="Имя">
+                </div>
+                <div class="feedback-form__input">
+                    <div class="feedback-form__text">Ваш телефон:</div>
+                    <input type="tel" placeholder="+7 (123)456-78-90">
+                </div>
+                <div class="feedback-form__textarea">
+                    <div class="feedback-form__text">Ваш вопрос:</div>
+                    <textarea placeholder="Сообщение"></textarea>
+                </div>
+                <button class="feedback-form__button" type="submit">Отправить</button>
+            </form>
+        </div>
 
     </section>
-    <section class="gallery">
+    <section id="gallery" class="gallery">
+        <h1>Галерея</h1>
+        <div class="gallery-video">
+            <img src="./img/image 3.jpg" alt="">
+        </div>
 
     </section>
-    <section class="map">
-
+    <section id="map" class="map">
+        <div class="map-info">
+            <div class="map-info__text">Кировская область, г. Киров , <br>ул. Красноармейская <br>(Нововятский район), д.5
+                <br>с левой стороны </div>
+            <div class="map-info__mail">
+                <div class='map-info__image'><img src="./img/svg/mail_black.svg" alt=""></div>
+                <div>shpzk@mail.ru</div>
+            </div>
+            <div class="map-info__phone">
+                <div class="map-info__image"><img src="./img/svg/phone_black.svg" alt=""></div>
+                <div>+7(8332)26-57-70 Офис</div>
+            </div>
+            <div class="map-info__phone">
+                <div class='map-info__image'><img src="./img/svg/phone_black.svg" alt=""></div>
+                <div>+7(900)325-57-70</div>
+            </div>
+            <div class="map-info__time">
+                <div class='map-info__image'><img src="./img/svg/time_black.svg" alt=""></div>
+                <div>Будни с 8-17</div>
+            </div>
+        </div>
+        <div>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afc4f53b9f13bbfc18b39fb7191469eced020ee1c34abc4a180db5b6c5c532101&amp;source=constructor"
+                width="100%" height="500" frameborder="0"></iframe>
+        </div>
     </section>
     <section class="calculator">
+        <h1>Калькулятор шпал</h1>
+        <div>
+            <input type="range">
+        </div>
 
     </section>
     <footer class="footer">
+        <div class="footer-content">
+            <div class="header-logo">
+                <a href="#main"><img src="./img/svg/logo.svg" alt=""></a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#price">Прайс</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#feedback">Оставить заявку</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#gallery">Галерея</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#map">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-info">
+                <div class="header-info__phone">
+                    <div class="header-info__image"><img src="./img/svg/phone.svg" alt=""></div>
+                    <div>+7(8332)26-57-70</div>
+                </div>
+                <div class="header-info__mail">
+                    <div class='header-info__image'><img src="./img/svg/mail.svg" alt=""></div>
+                    <div>shpzk@mail.ru</div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
