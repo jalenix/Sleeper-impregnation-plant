@@ -236,7 +236,18 @@
     <section class="calculator">
         <h1>Калькулятор шпал</h1>
         <div>
-            <input type="range">
+            <input id="rangeWay" type="range" min="100" step="100" max="2000" value="100">
+        </div>
+        <div>
+            <select name="amount" id="amount">
+                <option value="2000">2000</option>
+                <option value="1840">1840</option>
+                <option value="1600">1600</option>
+                <option value="1440">1440</option>
+            </select>
+        </div>
+        <div>
+            Всего необходимо: <span id="result">0</span>
         </div>
 
     </section>
@@ -276,5 +287,6 @@
     </footer>
 
 </body>
+<script src="/js/main.min.js"></script>
 
 </html>
