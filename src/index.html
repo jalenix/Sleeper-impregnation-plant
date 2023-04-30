@@ -36,11 +36,15 @@
         <div class="header-info">
             <div class="header-info__phone">
                 <div class="header-info__image"><img src="./img/svg/phone.svg" alt=""></div>
-                <div>+7(8332)26-57-70</div>
+                <a href="tel:+78332265770">
+                    +7(8332)26-57-70
+                </a>
             </div>
             <div class="header-info__mail">
                 <div class='header-info__image'><img src="./img/svg/mail.svg" alt=""></div>
-                <div>shpzk@mail.ru</div>
+                <a href="mailto:shpzk@mail.ru">
+                    shpzk@mail.ru
+                </a>
             </div>
         </div>
     </header>
@@ -235,21 +239,31 @@
     </section>
     <section class="calculator">
         <h1>Калькулятор шпал</h1>
-        <div>
-            <input id="rangeWay" type="range" min="100" step="100" max="2000" value="100">
+        <div class="calculator-content">
+            <div class="calculator-content__range">
+                <div>Протяженность пути, метров</div>
+                <div class="calculator-value">
+                    <span>100</span>
+                </div>
+                <input id="rangeWay" type="range" min="100" step="100" max="2000" value="100">
+                <div class="calculator-content__way">
+                    <div>0</div>
+                    <div>2000</div>
+                </div>
+            </div>
+            <div class="calculator-content__amount">
+                <div>Частота укладки, шт/км</div>
+                <select name="amount" id="amount">
+                    <option value="2000">2000</option>
+                    <option value="1840">1840</option>
+                    <option value="1600">1600</option>
+                    <option value="1440">1440</option>
+                </select>
+            </div>
+            <div class="calculator-content__result">
+                Всего необходимо: <span id="result">0</span>
+            </div>
         </div>
-        <div>
-            <select name="amount" id="amount">
-                <option value="2000">2000</option>
-                <option value="1840">1840</option>
-                <option value="1600">1600</option>
-                <option value="1440">1440</option>
-            </select>
-        </div>
-        <div>
-            Всего необходимо: <span id="result">0</span>
-        </div>
-
     </section>
     <footer class="footer">
         <div class="footer-content">
@@ -275,11 +289,15 @@
             <div class="footer-info">
                 <div class="header-info__phone">
                     <div class="header-info__image"><img src="./img/svg/phone.svg" alt=""></div>
-                    <div>+7(8332)26-57-70</div>
+                    <a href="tel:+78332265770">
+                        +7(8332)26-57-70
+                    </a>
                 </div>
                 <div class="header-info__mail">
                     <div class='header-info__image'><img src="./img/svg/mail.svg" alt=""></div>
-                    <div>shpzk@mail.ru</div>
+                    <a href="mailto:shpzk@mail.ru">
+                        shpzk@mail.ru
+                    </a>
                 </div>
             </div>
         </div>

@@ -12,8 +12,6 @@ function count() {
 document.addEventListener("DOMContentLoaded", function (event) {
     count();
 });
-
-
 rangeWay.addEventListener('input', function () {
     count()
 })
