@@ -1,6 +1,12 @@
 const rangeWay = document.getElementById('rangeWay')
 const amount = document.getElementById('amount')
 const result = document.getElementById('result')
+const slideValue = document.getElementById('span')
+rangeWay.oninput = (() =>{
+    let value = rangeWay.value
+    slideValue.textContent = value
+    slideValue.style.left = (value/4) + "px"
+})
 
 function count() {
     const wayValue = rangeWay.value
