@@ -24,3 +24,7 @@ rangeWay.addEventListener('input', function () {
 amount.addEventListener('change', function () {
     count()
 })
+
+document.getElementById('burger').addEventListener('click', function() {
+    document.querySelector('header').classList.toggle('open')
+})
