@@ -193,6 +193,7 @@ header.open .header {
         padding-left: 10px;
         border: none;
         color: #000000;
+        font-family: Inter, sans-serif;
       }
 
       & textarea {
@@ -204,6 +205,7 @@ header.open .header {
         padding-top: 5px;
         border: none;
         color: #000000;
+        font-family: Inter, sans-serif;
       }
     }
 
@@ -213,6 +215,8 @@ header.open .header {
       border-radius: 5px;
       padding-left: 10px;
       border: none;
+      font-family: Inter, sans-serif;
+      cursor: pointer;
     }
   }
 }
@@ -353,6 +357,7 @@ header.open .header {
         padding-left: 10px;
         border: none;
         color: #000;
+        font-family: Inter, sans-serif;
       }
     }
 
@@ -367,6 +372,7 @@ header.open .header {
         border: none;
         color: #000;
         padding-top: 10px;
+        font-family: Inter, sans-serif;
       }
     }
 
@@ -385,6 +391,8 @@ header.open .header {
       margin-bottom: 50px;
       font-size: 20px;
       font-weight: 400;
+      font-family: Inter, sans-serif;
+      cursor: pointer;
     }
   }
 }

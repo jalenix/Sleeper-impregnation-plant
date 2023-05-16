@@ -74,16 +74,17 @@
                 </div>
             </div>
             <div class="form">
-                <form class="form-feedback">
+                <form class="form-feedback" action="https://formspree.io/f/xeqwdplj"
+                method="POST">
                     <div class="form-feedback__text">Оставьте заявку и мы с<br> вами свяжемся</div>
                     <div class="form-feedback__input">
-                        <input type="name" placeholder="Ваше имя:">
+                        <input type="name" placeholder="Ваше имя:" name="name" required>
                     </div>
                     <div class="form-feedback__input">
-                        <input type="tel" placeholder="+7 (123) 456-78-90">
+                        <input type="tel" placeholder="+7 (123) 456-78-90" name="phone" required>
                     </div>
                     <div class="form-feedback__input">
-                        <textarea placeholder="Сообщение"></textarea>
+                        <textarea placeholder="Сообщение" name="comment" required></textarea>
                     </div>
                     <button class="form-feedback__button" type="submit">Отправить</button>
                 </form>
@@ -190,18 +191,19 @@
         <h2>Оставить заявку</h2>
         <div class="feedback-text">Если у вас есть вопросы, вы можете оставить их здесь</div>
         <div class="feedback-content">
-            <form class="feedback-form">
+            <form class="feedback-form" action="https://formspree.io/f/xeqwdplj"
+            method="POST">
                 <div class="feedback-form__input">
                     <div class="feedback-form__text">Ваше имя:</div>
-                    <input type="name" placeholder="Имя">
+                    <input type="name" placeholder="Имя" name="name" required>
                 </div>
                 <div class="feedback-form__input">
                     <div class="feedback-form__text">Ваш телефон:</div>
-                    <input type="tel" placeholder="+7 (123) 456-78-90">
+                    <input type="tel" placeholder="+7 (123) 456-78-90" name="phone" required>
                 </div>
                 <div class="feedback-form__textarea">
                     <div class="feedback-form__text">Ваш вопрос:</div>
-                    <textarea cols="5" rows="5" placeholder="Сообщение"></textarea>
+                    <textarea cols="5" rows="5" placeholder="Сообщение" name="comment" required></textarea>
                 </div>
                 <button class="feedback-form__button" type="submit">Отправить</button>
             </form>
@@ -268,15 +270,6 @@
             <div class="calculator-content__result">
                 Всего необходимо: <span id="result">0</span>
             </div>
-            <!-- <form class="calculator-form">
-                <div class="calculator-form__input">
-                    <input type="name" placeholder="Ваше имя:">
-                </div>
-                <div class="calculator-form__input">
-                    <input type="tel" placeholder="+7 (123) 456-78-90">
-                </div>
-                <button class="calculator-form__button" type="submit">Получить предварительный рассчет</button>
-            </form> -->
         </div>
     </section>
     <footer class="footer">
