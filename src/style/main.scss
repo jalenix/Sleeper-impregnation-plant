@@ -242,7 +242,7 @@ header.open .header {
   &-product {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 30px;
 
     &__text {
       font-size: 20px;
@@ -316,7 +316,7 @@ header.open .header {
     padding: 0 100px;
     align-items: center;
 
-    &__gaz {
+    &__gazprom {
       & img {
         padding-bottom: 70px;
       }
@@ -453,6 +453,7 @@ header.open .header {
 }
 
 .calculator {
+  margin-bottom: 50px;
   &-content {
     display: grid;
     justify-items: center;
@@ -599,7 +600,7 @@ header.open .header {
       background-color: black;
       padding: 100px 20px 20px 20px;
       transition: transform .5s;
-
+      text-align: center;
       &__list {
         display: block;
       }
